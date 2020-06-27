@@ -1,0 +1,12 @@
+#&data  &锚点名  解决数据的重复
+#引用锚点 <<: *data
+
+info: &data
+  name: "lili"
+  phone: "13423456789"
+
+address:
+#  name: "lili"
+#  phone: "13423456789"
+  <<: *data
+  detail: "路边的野花,你不要采"

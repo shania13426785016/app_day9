@@ -1,0 +1,64 @@
+##第一种写法 __字典
+#info1: {name: "shania", butiful: "真漂亮"}
+##第二种写法 __字典
+#info2:
+#  name: "shania"
+#  butiful: "真漂亮"
+#
+
+#------列表------
+#  __yaml数组
+#data1:
+#   - "女"
+#   - "lili"
+
+#python 列表
+#  data2: {Name: "我真漂亮啊"}
+
+#json 格式
+#info:
+#  - name: '张三'
+#  - name: "李四"
+
+
+#name_str: lili  # 自动转换数据类型,自动加上双引号
+
+#yaml 整数浮点数
+#name_str1: lili
+#name_data: 18.0081
+
+
+
+#yaml 布尔值
+#value: true
+#value2: false
+
+#python 布尔值
+#value3: True
+#value4: False
+
+
+#-----------------------空类型------------------------
+#yaml表示 结果 {'value': None}
+#value: ~
+#value3:
+##支持 js shell java
+#value4: Null
+#value5: null
+
+
+#python类型 结果 {'value1': 'None'} 不支持 返回的是字符串
+#value1: None
+#value2: none
+#-----------------------空类型------------------------
+
+#-----------------------日期类型-------------------------\
+#返回结果:{'data1': datetime.datetime(2020, 12, 22, 12, 49, 23)
+data1: 2020-12-22 12:49:23
+#返回结果:'data2': datetime.date(2020, 11, 22)
+data2: 2020-11-22
+#返回结果:'data3': 46163
+data3: "12:49:03"
+
+
+# 中间有空格  name:空格"2"
